@@ -26,14 +26,14 @@
      * This name is also used command-line parameters such as "--version-policy"
      * and "--to-version-policy".
      */
-    "policyName": "MyBigFramework",
+    "policyName": "RushPublishTest",
 
     /**
      * (Required) The current version.  All packages belonging to the set should have this version
      * in the current branch.  When bumping versions, Rush uses this to determine the next version.
      * (The "version" field in package.json is NOT considered.)
      */
-    "version": "1.0.0",
+    "version": "1.0.1-0",
 
     /**
      * (Required) The type of bump that will be performed when publishing the next release.
@@ -51,7 +51,7 @@
      * If this field is omitted, then a separate CHANGELOG.md file will be maintained for each
      * package in the set.
      */
-    "mainProject": "my-app"
+    "mainProject": "rush-publish-test"
   },
 
   {
