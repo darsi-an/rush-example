@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "rush-publish-test",
+      "comment": "update package name",
+      "type": "patch"
+    }
+  ],
+  "packageName": "rush-publish-test",
+  "email": "darsi-an@users.noreply.github.com"
+}
