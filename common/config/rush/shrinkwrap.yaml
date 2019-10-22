@@ -1,7 +1,7 @@
 dependencies:
-  '@rush-temp/my-app': 'file:projects/my-app.tgz'
   '@rush-temp/my-controls': 'file:projects/my-controls.tgz'
   '@rush-temp/my-toolchain': 'file:projects/my-toolchain.tgz'
+  '@rush-temp/rush-publish-test': 'file:projects/rush-publish-test.tgz'
   '@types/node': 10.14.9
   colors: 1.3.3
   rimraf: 2.6.3
@@ -91,6 +91,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-7KxJovlYhTX5RaRbUdkAXN1KUZ8PwWlTzQdHV6xNqvuFOs7+WBo10TQUqT19Q/Jz2hk5v9TQDIhyLhhJY4p5AA==
+  /typescript/3.6.4:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-unoCll1+l+YK4i4F8f22TaNVPRHcD9PA3yCuZ8g5e0qGqlVlJ/8FSateOLLSagn+Yg5+ZwuPkL8LFUc0Jcvksg==
   /whatwg-fetch/3.0.0:
     dev: false
     resolution:
@@ -99,16 +106,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-  'file:projects/my-app.tgz':
-    dependencies:
-      typescript: 3.5.2
-      whatwg-fetch: 3.0.0
-    dev: false
-    name: '@rush-temp/my-app'
-    resolution:
-      integrity: sha512-mi3UPHguYxx/Wzhcj7O+cepH+zxgIUil2JEQ8Fcb4TmcelePmwnPZmi9bUBnEeREizwws6+4dm2wsHo7K596ag==
-      tarball: 'file:projects/my-app.tgz'
-    version: 0.0.0
   'file:projects/my-controls.tgz':
     dependencies:
       typescript: 3.5.2
@@ -130,13 +127,23 @@ packages:
       integrity: sha512-6Yh2A6KCBSW0Y6ynP69hdpZnVtsq0oMxQBApV82kBgz9+ha3i/OcPq7PAp8/vs/xBGz1d2CfAc1+r0Ipi2M+zA==
       tarball: 'file:projects/my-toolchain.tgz'
     version: 0.0.0
+  'file:projects/rush-publish-test.tgz':
+    dependencies:
+      typescript: 3.6.4
+      whatwg-fetch: 3.0.0
+    dev: false
+    name: '@rush-temp/rush-publish-test'
+    resolution:
+      integrity: sha512-Ee5+E7hwIY5gfIhwkXjDYO2XvvuKS7LxWdW8BNGs2yCV+Aq0Op5oKy23bZoWLh4kLCbEBshNletat4VcmE5REg==
+      tarball: 'file:projects/rush-publish-test.tgz'
+    version: 0.0.0
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  '@rush-temp/my-app': 'file:./projects/my-app.tgz'
   '@rush-temp/my-controls': 'file:./projects/my-controls.tgz'
   '@rush-temp/my-toolchain': 'file:./projects/my-toolchain.tgz'
+  '@rush-temp/rush-publish-test': 'file:./projects/rush-publish-test.tgz'
   '@types/node': ^10.9.4
   colors: ^1.3.2
   rimraf: ^2.6.2
