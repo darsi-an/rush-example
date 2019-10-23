@@ -1,0 +1,26 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+strategy:
+  matrix:
+    'NodeJs 8':
+      NodeVersion: 8
+    'NodeJs 10':
+      NodeVersion: 10
+    'NodeJs 12':
+      NodeVersion: 12
+
+steps:
+- task: NodeTool@0
+  displayName: 'Use Node $(NodeVersion).x'
+  inputs:
+    versionSpec: '$(NodeVersion).x'
+    checkLatest: true
+- script: 'node common\scripts\install-run-rush.js change --verify'
+  displayName: 'Verify Change Logs'
+- script: 'node common\scripts\install-run-rush.js install'
+  displayName: 'Rush Install'
+- script: 'node common\scripts\install-run-rush.js rebuild --verbose --production'
+  displayName: 'Rush Rebuild'
