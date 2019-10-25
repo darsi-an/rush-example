@@ -2,6 +2,23 @@
   "name": "@darsi-an/rush-publish-test",
   "entries": [
     {
+      "version": "1.1.0",
+      "tag": "@darsi-an/rush-publish-test_v1.1.0",
+      "date": "Fri, 25 Oct 2019 00:45:22 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "t"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Last test "
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.20",
       "tag": "@darsi-an/rush-publish-test_v1.0.20",
       "date": "Thu, 24 Oct 2019 22:54:41 GMT",
