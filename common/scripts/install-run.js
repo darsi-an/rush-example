@@ -60,7 +60,7 @@ function _parsePackageSpecifier(rawPackageSpecifier) {
  *
  * IMPORTANT: THIS CODE SHOULD BE KEPT UP TO DATE WITH Utilities._syncNpmrc()
  */
-function _syncNpmrc(sourceNpmrcFolder, targetNpmrcFolder) {
+function _syncNpmrc(sourceNpmrcFolder, targetNpmrcFolder, usePublishNpmrc) {
     const sourceNpmrcPath = path.join(sourceNpmrcFolder, '.npmrc');
     const targetNpmrcPath = path.join(targetNpmrcFolder, '.npmrc');
     try {
