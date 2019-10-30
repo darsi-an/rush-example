@@ -10,4 +10,4 @@
 
 registry=https://registry.npmjs.org/
 always-auth=false
-//my-registry.com/npm/:_authToken=${NPM_TOKEN}
+//my-registry.com/npm/:_authToken=${NPM_AUTH_TOKEN}
