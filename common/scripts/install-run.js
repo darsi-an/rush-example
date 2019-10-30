@@ -60,8 +60,8 @@ function _parsePackageSpecifier(rawPackageSpecifier) {
  *
  * IMPORTANT: THIS CODE SHOULD BE KEPT UP TO DATE WITH Utilities._syncNpmrc()
  */
-function _syncNpmrc(sourceNpmrcFolder, targetNpmrcFolder, usePublishNpmrc) {
-    const sourceNpmrcPath = path.join(sourceNpmrcFolder, '.npmrc');
+function _syncNpmrc(sourceNpmrcFolder, targetNpmrcFolder, useNpmrcPublish) {
+    const sourceNpmrcPath = path.join(sourceNpmrcFolder, !useNpmrcPublish ? '.npmrc' : '.npmrc-publish');
     const targetNpmrcPath = path.join(targetNpmrcFolder, '.npmrc');
     try {
         if (fs.existsSync(sourceNpmrcPath)) {
