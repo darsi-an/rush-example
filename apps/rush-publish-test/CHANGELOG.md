@@ -1,6 +1,13 @@
 # Change Log - @darsi-an/rush-publish-test
 
-This log was last generated on Wed, 30 Oct 2019 09:35:02 GMT and should not be manually modified.
+This log was last generated on Thu, 31 Oct 2019 19:39:36 GMT and should not be manually modified.
+
+## 1.3.1
+Thu, 31 Oct 2019 19:39:36 GMT
+
+### Patches
+
+- 1.3.2
 
 ## 1.3.0
 Wed, 30 Oct 2019 09:35:02 GMT
