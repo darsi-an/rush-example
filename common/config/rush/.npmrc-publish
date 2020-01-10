@@ -10,3 +10,5 @@
 
 registry=http://localhost:4873
 always-auth=false
+//localhost:4873/:_authToken=${VERDACCIO_TOKEN}
+
