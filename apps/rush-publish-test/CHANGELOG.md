@@ -1,6 +1,13 @@
 # Change Log - @darsi-an/rush-publish-test
 
-This log was last generated on Fri, 24 Jan 2020 08:13:19 GMT and should not be manually modified.
+This log was last generated on Fri, 31 Jan 2020 02:27:14 GMT and should not be manually modified.
+
+## 1.21.0
+Fri, 31 Jan 2020 02:27:14 GMT
+
+### Minor changes
+
+- Update pnpm version to 4.8.0
 
 ## 1.20.0
 Fri, 24 Jan 2020 08:13:19 GMT
