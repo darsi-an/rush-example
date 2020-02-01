@@ -2,6 +2,18 @@
   "name": "@darsi-an/rush-publish-test",
   "entries": [
     {
+      "version": "1.25.0",
+      "tag": "@darsi-an/rush-publish-test_v1.25.0",
+      "date": "Sat, 01 Feb 2020 21:10:39 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "test private"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.24.1",
       "tag": "@darsi-an/rush-publish-test_v1.24.1",
       "date": "Sat, 01 Feb 2020 20:17:47 GMT",
