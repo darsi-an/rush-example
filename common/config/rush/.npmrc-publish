@@ -10,4 +10,6 @@
 
 registry=https://registry.npmjs.org/
 always-auth=false
+//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+
 

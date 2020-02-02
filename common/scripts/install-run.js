@@ -97,8 +97,8 @@ function _copyAndTrimNpmrcFile(sourceNpmrcPath, targetNpmrcPath) {
  *
  * IMPORTANT: THIS CODE SHOULD BE KEPT UP TO DATE WITH _syncNpmrc() FROM scripts/install-run.ts
  */
-function _syncNpmrc(sourceNpmrcFolder, targetNpmrcFolder) {
-    const sourceNpmrcPath = path.join(sourceNpmrcFolder, '.npmrc');
+function _syncNpmrc(sourceNpmrcFolder, targetNpmrcFolder, usePublishHome) {
+    const sourceNpmrcPath = path.join(sourceNpmrcFolder, !usePublishHome ? '.npmrc' : '.npmrc-publish');
     const targetNpmrcPath = path.join(targetNpmrcFolder, '.npmrc');
     try {
         if (fs.existsSync(sourceNpmrcPath)) {
