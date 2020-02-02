@@ -1,6 +1,13 @@
 # Change Log - @darsi-an/rush-publish-test
 
-This log was last generated on Sun, 02 Feb 2020 01:38:32 GMT and should not be manually modified.
+This log was last generated on Sun, 02 Feb 2020 03:18:22 GMT and should not be manually modified.
+
+## 1.29.0
+Sun, 02 Feb 2020 03:18:22 GMT
+
+### Minor changes
+
+- test public
 
 ## 1.28.0
 Sun, 02 Feb 2020 01:38:32 GMT
