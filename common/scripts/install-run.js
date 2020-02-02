@@ -57,10 +57,10 @@ function _parsePackageSpecifier(rawPackageSpecifier) {
  * we'd prefer to skip that line and continue looking in other places such as the user's
  * home directory.
  *
- * IMPORTANT: THIS CODE SHOULD BE KEPT UP TO DATE WITH _copyNpmrcFile() FROM scripts/install-run.ts
+ * IMPORTANT: THIS CODE SHOULD BE KEPT UP TO DATE WITH Utilities._copyNpmrcFile()
  */
 function _copyAndTrimNpmrcFile(sourceNpmrcPath, targetNpmrcPath) {
-    console.log(`Copying ${sourceNpmrcPath} --> ${targetNpmrcPath}`);
+    console.log(`Copying ${sourceNpmrcPath} --> ${targetNpmrcPath}`); // Verbose
     let npmrcFileLines = fs.readFileSync(sourceNpmrcPath).toString().split('\n');
     npmrcFileLines = npmrcFileLines.map((line) => (line || '').trim());
     const resultLines = [];
@@ -106,7 +106,7 @@ function _syncNpmrc(sourceNpmrcFolder, targetNpmrcFolder) {
         }
         else if (fs.existsSync(targetNpmrcPath)) {
             // If the source .npmrc doesn't exist and there is one in the target, delete the one in the target
-            console.log(`Deleting ${targetNpmrcPath}`);
+            console.log(`Deleting ${targetNpmrcPath}`); // Verbose
             fs.unlinkSync(targetNpmrcPath);
         }
     }
