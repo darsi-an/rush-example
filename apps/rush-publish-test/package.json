@@ -1,6 +1,6 @@
 {
   "name": "@darsi-an/rush-publish-test",
-  "version": "1.29.1",
+  "version": "1.29.2",
   "description": "An example application that consumes the my-controls library",
   "license": "MIT",
   "scripts": {
